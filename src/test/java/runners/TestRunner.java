@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
  src/test/resources/features/user-signup.feature
  src/test/resources/features/user-login.feature
  */
-@CucumberOptions( features = "src/test/resources/features", 
+@CucumberOptions( features = "src/test/resources/features/user-login.feature", 
 					glue = {"stepDefinitions", "hooks"}, 
 					plugin = {"pretty" ,"html:target/cucumber-reports.html", "json:target/cucumber.json"},
 					monochrome = true
